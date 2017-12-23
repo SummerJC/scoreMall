@@ -1,0 +1,758 @@
+@charset "utf-8";
+// body, html {
+//   position: fixed;
+//   top: 0px;
+//   bottom: 0px;
+//   width: 100%;
+//   height: 100%;
+// }
+.loadingMore p{
+  color: #ffffff;
+}
+
+
+//今日积分榜
+.integContent{
+    width: 100%;
+    min-height: 100%;
+    background: #fe5050;
+    overflow: hidden;
+  position: absolute;
+  .page-infinite-loading{
+    color: #fff;
+    text-align: center;
+  }
+  .mint-spinner-fading-circle-circle::before{
+    background-color:#fff !important;
+  }
+  .mint-spinner-fading-circle{
+    margin: 0 auto;
+  }
+  .first{
+    height: 62px;
+  }
+
+  .champion_one:last-child{
+    border-bottom: none;
+  }
+  .first span{
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 62px;
+    margin: 0 0 0 15px;
+    float: left;
+  }
+  .frist_r{
+    background: url(../../assets/images/ranking.png) no-repeat;
+    background-size: 100% 100%;
+    width: 150px;
+    height: 50px;
+    float: right;
+    margin: 13px 8px 0 0;
+  }
+  .frist_r span{
+    line-height: 40px;
+    margin-left: 30px;
+    display: block;
+  }
+  .my_ranking{
+    height: 70px;
+    background: #ffffff;
+    width:calc(100% - 30px);
+    margin-top: 3px;
+    margin-left: 15px;
+    border-radius: 6px;
+  }
+  .my_ranking img{
+    height:40px;
+    width:40px;
+    float: left;
+    display: block;
+    margin: 15px 10px 15px 0px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    text-align: center;
+  }
+  .my_namedate {
+    padding-top: 18px;
+    float: left;
+    width: calc(100% - 150px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+     font-size: 15px;
+    color: #222222;
+    line-height: 40px;
+  }
+  .my_grade span{
+    float:right;
+    margin: 25px 15px 0 0;
+    font-size: 13px;
+    color: #999999;
+  }
+  .ranking{
+    width:50px;
+    height:100%;
+    float:left;
+  }
+  .ranking span{
+    float: left;
+    line-height: 70px;
+    margin:  0 0 0 20px;
+    font-size: 13px;
+  }
+
+  .history_champion{
+    width:calc(100% - 30px);
+    margin:  10px 0 15px 15px;
+    border-radius: 6px;
+    background: #ffffff;
+  }
+
+  .champion_one{
+    width: 100%;
+    border-bottom: 1px solid #ededed;
+    height: 70px;
+  }
+
+  .history_one{
+    float: left;
+    font-size: 13px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #222222;
+    text-align: center;
+    line-height: 20px;
+    margin: 25px 15px 25px 15px;
+  }
+
+  .one_head img{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: 15px 10px 15px 0;
+    border-radius: 50%;
+
+  }
+  .one_name{
+    float: left;
+    line-height: 70px;
+    font-size: 15px;
+    color: #222222;
+    width: calc(100% - 150px);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .one_integral span{
+    float: right;
+    font-size: 13px;
+    color: #666666;
+    line-height: 70px;
+    margin: 0 15px 0 0;
+  }
+}
+//个人中心
+.perCenter{
+  .popup{
+     background: none;
+     width: calc(100% - 80px)
+    }
+  .popup img{
+    width: 100%;
+    border-radius:8px;
+  }
+ .shareImg{
+  width: calc(100% - 60px);
+  height: 50%;
+  margin: 35% 30px 0;
+  background: url('../../assets/images/shareQRcode.png');
+  background-size:100% 100%;
+  /*background: #fe5050;*/
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 13px;
+  line-height:20px;
+}
+ .shareImg .title{
+  width: 70%;
+  padding-top: 20px;
+}
+.shareImg  img{
+  width: 50%;
+  margin:10px auto;
+}
+ .shareImg  p:nth-child(2){
+  font-size: 13px;
+  margin-top: -20px;
+}
+.message{
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+}
+  .page-infinite-loading{
+      color: #fff;
+    }
+  .mint-spinner-fading-circle-circle::before{
+    background-color:#fff !important;
+  }
+  .mint-spinner-fading-circle{
+    margin: 0 auto;
+  }
+.MyCentent{
+  z-index: 10;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  position: absolute;
+  background-size: cover;
+  background: #ffdcdc;
+}
+
+    .banner {
+      width:100%;
+      height:250px;
+      background-size: 100% 100%;
+      overflow: hidden;
+    }
+  .banner .residue{
+    text-align: center;
+    width:50%;
+    border-right: 1px solid #fe9798;
+    float: left;
+    margin-top: 30px;
+  }
+  .banner .ative{
+      font-size: 32px;
+    color: #fffeae;
+  }
+  .banner .all{
+
+    text-align: center;
+    width:50%;
+    float: left;
+    margin-top: 30px;
+  }
+  .banner p{
+    font-size: 14px;
+    color: white;
+  }
+ .My_friends{
+    width:100%;
+    height:200px;
+    padding-top: 130px;
+   margin: 0 0 45px 15px;
+  }
+.My_friends li{
+  font-size: 13px;
+  color: white;
+}
+  .My_friends .indirect_friends{
+    margin: 10px 0;
+  }
+  .banner_rule span{
+    text-align: center;
+   display: block;
+    margin-top: -20px;
+    font-size: 13px;
+    color: white;
+  }
+  .center{
+    display: block;
+  }
+.center .center_rank{
+  float: left;
+  background: url(../../assets/images/btn-2.png) no-repeat;
+  margin-top: 13px;
+  height:60px;
+  width:calc(50%  - 15px);
+  background-size: 100% 100%;
+  margin-left: 13px;
+  a{
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+}
+  .center .center_rank p{
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 15px;
+    }
+
+  .center_record{
+    background: url(../../assets/images/btn-3.png) no-repeat;
+    margin-top: 13px;
+    height:60px;
+    width:46%;
+    background-size: 100% 100%;
+    margin-right: 13px;
+    float: left;
+    a{
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+  }
+  .center .center_record p{
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 15px;
+  }
+  .List_friends{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+    padding-bottom: 86px;
+    .kong{
+      width:calc(100% - 30px);
+      float: left;
+      margin: 0 15px;
+      border-radius:0 0 5px 5px;
+      background: #fff;
+      text-align: center;
+      font-size: 14px;
+      color: #999999;
+
+    }
+  }
+  .friends_recom{
+    width:calc(100% - 30px);
+    height: 40px;
+    background: #a046fe;
+    float: left;
+    margin-top: 3px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-left: 15px;
+
+  }
+  .friends_recom p{
+    color: #ffffff;
+     font-size: 15px;
+    text-align: center;
+    line-height: 40px;
+  }
+  .Direct{
+    height: 70px;
+   width:calc(100% - 30px);
+    border-bottom:1px solid #ededed;
+    margin-left: 15px;
+  }
+  .Direct:last-child{
+    border-bottom:none;
+  }
+  .Direct img{
+    height:40px;
+    width:40px;
+    float: left;
+    display: block;
+    margin: 15px 10px 15px 0px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    text-align: center;
+  }
+  .friends_Direct{
+    float: left;
+    background: #ffffff;
+    width:calc(100% - 30px);
+    margin: 0 0 5px 15px;
+
+    overflow: hidden;
+
+  }
+
+  .loadingMore{
+    text-align: center;
+    float: left;
+    margin-left: 140px;
+
+  }
+
+  .Direct_namedate{
+    padding-top: 18px;
+    float: left;
+  }
+  .Direct_namedate span{
+    display: block;
+    font-size: 15px;
+    color: #222222;
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .Direct_namedate p{
+    font-size: 13px;
+    color: #999999;
+    padding-top: 6px;
+  }
+  .indirect_friend{
+    float:right;
+    margin: 25px 0 0 0;
+    font-size: 13px;
+    color: #999999;
+  }
+  footer{
+    box-shadow: 1px 5px 6px #eaaeae;
+    margin-top: 13px;
+    float: left;
+    background: #fe5050;
+    height: 66px;
+    width:calc(100% - 30px);
+    margin-left: 15px;
+    border-radius: 6px;
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+  }
+  footer span{
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 65px;
+  }
+
+
+}
+
+//历史排行冠军
+.historyContent{
+    overflow: hidden;
+    width: 100%;
+    min-height: 100%;
+    background: #fe5050;
+    position: absolute;
+    .page-infinite-loading{
+      color: #fff;
+    }
+    .mint-spinner-fading-circle-circle::before{
+      background-color:#fff !important;
+    }
+    .mint-spinner-fading-circle{
+      margin: 0 auto;
+    }
+  .history_champions{
+    background: #ffffff;
+    width:calc(100% - 30px);
+    border-radius: 8px;
+    margin: 15px 0 0 15px;
+  }
+  .champions_record{
+    height: 70px;
+    border-bottom: 1px solid #ededed;
+    margin: 0 0 15px 0;
+  }
+  .champions_record img{
+    height:40px;
+    width:40px;
+    float: left;
+    display: block;
+    margin: 15px 10px 15px 15px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    text-align: center;
+
+  }
+  .champions_namedate {
+    padding-top: 18px;
+    float: left;
+    font-size: 15px;
+    color: #222222;
+    width: calc(100% - 110px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .champions_record  p{
+    font-size: 13px;
+    color: #999999;
+    padding-top: 6px;
+  }
+  .champions_record:last-child{
+    border-bottom: none;
+  }
+   .champions_integral span{
+    float:right;
+    margin: 25px 15px 0 0;
+    font-size: 13px;
+    color: #999999;
+  }
+
+
+  .loadingMore{
+    text-align: center;
+
+  }
+}
+
+
+//兑换记录
+
+.exchangContent{
+      overflow: hidden;
+      width: 100%;
+      min-height: 100%;
+     background: #fe5050;
+  position: absolute;
+  .loadingMore{
+    text-align: center;
+  }
+  .page-infinite-loading{
+    color: #fff;
+  }
+  .mint-spinner-fading-circle-circle::before{
+    background-color:#fff !important;
+
+  }
+  .mint-spinner-fading-circle{
+    margin: 0 auto;
+
+  }
+  .records{
+    width:100%;
+    overflow: hidden;
+    padding-bottom: 87px;
+    height: 100%;
+  }
+  .record{
+    width: calc(100% - 30px);
+    background: #ffffff;
+    margin: 15px 0 10px 15px;
+    border-radius: 8px;
+    height:auto;
+    overflow: hidden;
+  }
+
+
+  .record_on{
+    width: 100%;
+    height: 110px;
+    border-bottom: 1px solid #ededed;
+  }
+  .record_on:last-child{
+    border-bottom: none;
+  }
+  .record_on img{
+    background-size: 100% 100%;
+    background: no-repeat;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #e5e5e5;
+    display: block;
+    float: left;
+    margin: 15px;
+  }
+  .record_m span{
+    width: calc(100% - 115px);
+    display: inline-block;
+    margin: 16px 0 10px 0;
+    font-size: 14px;
+    color: #222222;
+    line-height: 14px;
+    //display: -webkit-box;
+    //-webkit-box-orient: vertical;
+    //-webkit-line-clamp: 3;
+    //overflow: hidden;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+    .record_con li{
+      font-size: 13px;
+      color: #666666;
+ }
+  .foot{
+    width: calc(100% - 30px)!important;
+    background: url(../../assets/images/btn-4.png);
+    height: 70px;
+    background-size: 100% 100%;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    display: block;
+    margin: 0 15px;
+  }
+  .foot span{
+    display: block;
+    width: calc(100% - 30px);
+    margin: 0 0 0 13px;
+    line-height: 70px;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+
+
+
+
+.prizeInfoContent{
+    background-color: #f2f2f2;
+
+    header{
+        img{
+            width: 100%;
+        }
+    }
+    .goodsInfo{
+        background-color: #fff;
+        line-height: 25px;
+        width:100%;
+        height: auto;
+        padding:10px;
+        overflow: hidden;
+
+        p{
+            font-size: 15px;
+            color: #222;
+
+            span{
+                float: left;
+                font-size: 12px;
+                color: #999;
+            }
+            span:first-child{
+                color: #fe5050;
+                font-size: 15px;
+            }
+            span:nth-child(2){
+                margin-left: 15px;
+                text-decoration: line-through;
+            }
+            span:last-child{
+                float: right;
+            }
+        }
+    }
+    article{
+        background-color: #fff;
+        margin-top: 15px;
+        font-size: 13px;
+        color: #222;
+        line-height: 25px;
+        text-indent: 15px;
+        text-align: justify;
+        margin-bottom: 70px;
+
+        img{
+            width: 100%;
+        }
+    }
+    .bottomArea{
+        width: 100%;
+        padding:0px 10px 0px 15px;
+        height:70px;
+        position: fixed;
+        bottom:0px;
+        background-color: #fff;
+        z-index: 100;
+        font-size: 11px;
+        color: #222;
+
+        p{
+            margin-top: 5px;
+
+            span:last-child{
+                float: right;
+                margin-right: 15px;
+            }
+        }
+        button{
+            float: right;
+            margin-right:10px;
+            width: 140px;
+            height: 40px;
+            color: #fff;
+            background: #fe5050;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .btn-numbox {
+            overflow: hidden;
+            background:#fff;
+            margin-top: 10px;
+            float: left;
+            .count{
+                border-radius: 3px;
+                overflow: hidden;
+                .input-num {
+                    width: 50px;
+                    height: 30px;
+                    color: #333;
+                    border-left: 0;
+                    border-right: 0;
+                }
+                .num-add,
+                .input-num,
+                .num-minus{
+                    display: inline-block;
+                    width: 30px;
+                    height:30px;
+                    line-height: 30px;
+                    text-align: center;
+                    font-size: 15px;
+                    color: #999;
+                    cursor: pointer;
+                    border: 1px solid #e6e6e6;
+                }
+            }
+            li {
+                float: left;
+            }
+             .number,.kucun {
+                display: inline-block;
+                font-size: 14px;
+                color: #666666;
+                vertical-align: sub;
+            }
+
+//          .icon-minus{
+//              background: url(../../images/add.png);
+//          }
+//          .icon-minus-forbid{
+//              background: url(../../images/add.png) 0 0 no-repeat #f5f3f3;
+//          }
+//          .icon-add{
+//              background: url(../../images/minus.png);
+//          }
+//          .icon-add-forbid{
+//              background: url(../../images/minus.png) 0 0 no-repeat #f5f3f3;
+//          }
+        }
+    }
+}
+.banner_bg{
+      background: url(../../assets/images/pre.png) no-repeat;
+}
+.icon-minus{
+  background: url(../../assets/images/add.png);
+}
+.icon-minus-forbid{
+  background: url(../../assets/images/add.png) 0 0 no-repeat #f5f3f3;
+}
+.icon-add{
+  background: url(../../assets/images/minus.png);
+}
+.icon-add-forbid{
+  background: url(../../assets/images/minus.png) 0 0 no-repeat #f5f3f3;
+}
+.shareImg{
+      width: calc(100% - 60px);
+      height: 50%;
+      margin: 35% 30px 0;
+      background: url('../../assets/images/shareQRcode.png');
+      background-size:100% 100%;
+      /*background: #fe5050;*/
+      text-align: center;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 13px;
+      line-height:20px;
+    }
+
